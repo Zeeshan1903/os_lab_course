@@ -1,0 +1,21 @@
+ Write program stat, which print out file size, number of blocks allocated, and reference count.
+2. Write a program that lists files in the given directory. When called without any arguments, the
+program should just print the file names. When invoked with the -s or -p flag, the program
+should print out the size and permissions of each file, respectively.
+3. Write a program that prints out the last few lines of a file. The program should be efficient,
+in that it seeks to near the end of the file, reads in a block of data, and then goes backwards
+until it finds the requested number of lines; at this point, it should print out those lines from
+beginning to the end of the file. To invoke the program, one should type: mytail -n file,
+where n is the number of lines at the end of the file to print.
+4. Write a program search that prints out the names of each file and directory in the file system
+tree, starting the given directory. It should throw an error if invoked with a file. A sample
+output on a fictitious directory foo is as follows
+foo
+|-a.txt
+|-dir1
+| |-b.txt
+| |-c.txt
+|-dir2
+|-dir3
+|-d.txt
+End of document
