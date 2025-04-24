@@ -39,7 +39,7 @@ void my_tail(int fd,int no_lines){
 int main(){
     const char* path = "a.txt"; 
     int fd = open("a.txt", O_RDONLY);
-    int no_lines = 10;
+    int no_lines = 100;
     // printf("Waiting\n");
     my_tail(fd,no_lines);
     print(fd);

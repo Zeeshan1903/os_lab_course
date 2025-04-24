@@ -32,7 +32,7 @@ void print(const char* path,int depth){
 
         if(S_ISDIR(statbuf.st_mode)){
             print(input,depth+1);
-        }
+        }   
 
     }
     closedir(d);
